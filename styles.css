@@ -1,0 +1,284 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #f1f1f1;
+    background-image: url(images/30e036a43def45e2616848b4fef44a69.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.nav-main{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 60px;
+    background-color: #FFF;
+    display: flex;
+    flex-wrap:wrap;
+    opacity: 0.75;
+    z-index: 1000;
+}
+
+.nav-main:hover{
+    opacity: 1;
+}
+
+.btn-toggle-nav{
+    width:60px;
+    height:100%;
+    background-color: orange;
+    background-image: url(images/menu.png-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+    cursor: pointer;
+}
+.btn-toggle-nav:hover{
+    opacity:50%;
+}
+
+.nav-main #Title{
+    font-family: 'Cedarville Cursive', cursive;
+    display:block;
+    margin: 0 375px;
+    white-space: nowrap;
+}
+
+
+.nav-main ul{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.nav-main ul li{
+    list-style: none;
+    line-height: 60px;
+    width: 60px;
+}
+
+.nav-main ul li a{
+    display:block;
+    padding: 0 10px;
+}
+
+.nav-main #Link{
+    width: 95%;
+    padding: 25%;
+    border-radius: 100%;
+}
+.nav-main #Link2{
+    width: 95%;
+    padding: 25%;
+    border-radius: 100%;
+}
+.nav-main #Link3{
+    width: 95%;
+    padding: 25%;
+    border-radius: 5%;
+}
+
+.nav-sidebar{
+    position: fixed;
+    left:0;
+    bottom:0;
+    width:50px;
+    padding:0 5px;
+    height: calc(100% - 60px);
+    background-color: #1b1b1b;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+.nav-sidebar ul{
+    top: 15px;
+    overflow:hidden;
+    visibility:hidden;
+}
+.nav-sidebar ul li{
+    line-height: 60px;
+    list-style: none;
+}
+.nav-sidebar ul li span, ul li a {
+    display:block;
+    line-height: 60px;
+    padding:0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    font-family: arial;
+    font-size:16px;
+    white-space: nowrap;
+    transition: all 0.3s ease-in-out;  
+}
+
+.nav-sidebar ul li a:hover{
+
+  background-color: #222;
+
+}
+
+.nav-sidebar ul li span{
+    margin-left: 33%;
+}
+
+.intro-container{
+    display: block;
+    margin-top: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    background-color: orange;
+    text-align: center;
+    opacity: 0.75;
+    white-space: nowrap;
+    border: 2px solid #111;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    padding-top:1%;
+    padding-bottom: 5%;
+}
+
+.box {
+    background-color:orange;
+    opacity: 0.7;
+    box-shadow: 0 4px 8px 0 white;
+    transition: 0.3s;
+    border-radius: 10px;
+    font-weight: normal;
+    width: 50%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 3%;
+  }
+
+ .intro-container > h2{
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0 auto;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  .small-screen{
+    visibility: hidden;
+}
+
+  .body-container{
+      text-align: center;
+      color: #FFF;
+      text-shadow: 2px 2px #111;
+      margin-top: 30px;
+      font-size: 16px;
+  }
+  .grid-container > div {
+    text-align: center;
+    padding: 10px 55px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .skills {
+    text-align: right; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: white; /* White text color */
+    border-radius: 15px;
+  }
+
+  .python {width: 70%; background-color: rgb(0, 174, 255);} 
+  .csharp {width: 55%; background-color: rgb(184, 124, 12);}
+  .java {width: 55%; background-color: red;}
+  .js {width: 30%; background-color: rgb(231, 65, 107);} 
+  .css {width: 30%; background-color: rgb(21, 180, 21);} 
+  .html {width: 40%; background-color: rgb(42, 132, 235);}
+
+  .container div i {
+    margin-right: 3%;
+    color: #fff;
+}
+
+.fab, .far {
+    font-weight: 400;
+}
+.fab {
+    font-family: "Font Awesome 5 Brands";
+}
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }
+
+  @viewport{
+      zoom: 1.0;
+      width: extend-to-zoom;
+  }
+
+  @-ms-viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+  }
+
+  @media only screen and (max-width: 1025px) {
+    .small-screen{
+        visibility: visible;
+    }
+    
+    .nav-main{
+        visibility: hidden;
+    }
+    
+    .nav-main .btn-toggle-nav{
+        visibility: visible;
+    }
+
+    .body-container{
+        font-size: 10px;
+    }
+    .nav-sidebar{
+        width: 0px;
+        padding:0;
+    }
+    .intro-container{
+        width: calc(100vw *0.8);
+        font-size: 10px;
+    }
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 80% }
+      }
+  }
+
+
+
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="description" content="Personal Website Blog">
+    <link rel="stylesheet" href="styles.css">
+    <title>Projects</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-main">
+            <div class="btn-toggle-nav" onclick = "toggleNav()"></div>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/mohammad-khan-241147206/" target="_blank" rel="noopener noreferrer">
+                    <img id="Link" src="images/linkedin.png" alt="LinkedIn">
+                </a></li>
+                <li><a href="https://github.com/MKCodes" target="_blank" rel="noopener noreferrer">
+                        <img id="Link2" src="images/github.png" alt="Github">
+                </a></li>
+                <li>
+                    <a href="mailto:mohammad.danial.khan@ryerson.ca" target="_blank" rel="noopener noreferrer">
+                        <img id="Link3" src="images/email.png" alt="Email">
+                    </a>
+                </li>
+                <li><div class="title-main">
+                    <h1 id="Title">Mohammad Khan's Website</h1>
+                </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="nav-sidebar">
+        <ul>
+            <li><span>Menu</span></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume (2).pdf">Resume</a></li>
+            <div class="small-screen">
+            <li><a href="https://www.linkedin.com/in/mohammad-khan-241147206/">Linkedin</a></li>
+            <li><a href="https://github.com/MKCodes">Github</a></li>
+            <li><a href="mailto:mohammad.danial.khan@ryerson.ca">Email</a></li>
+            </div>
+            
+        </ul>
+
+    </aside>
+
+    <div class="grid-container" style="font-weight: bold; position: absolute; top: 10%;">
+        
+        <div class="box">
+            <h2 style="font-size: xx-large; text-shadow: 2 2px #000000;">Sierpinski’s Triangle Generator</h2>
+            <div class="grid-container" style="grid-template-columns: auto auto auto;">
+         <p> Sierpinski’s Triangle Generator (C#) utilizes the graphics class and recursion to generate the fractal using 2 methods. One method involves the user
+            manually inputting the X and Y values. The other method, involves the user using the mouse to select 3 random points on the canvas per triangle. </p>
+            </div>       
+        </div>
+        <div class="box">
+            <h2 style="font-size: xx-large; text-shadow: 2 2px #000000;"> Simple Scientific Calculator </h2>
+            <div class="grid-container" style="grid-template-columns: auto auto auto;">
+                <p> The Simple Scientific Calculator is the first C# project I came up with. It completes many tasks including calculating arithmetic average, median, mode, minimum value, nth smallest value and randomizes the list order from inputted values.
+                    <br> <br>
+
+                    As well, this was my first introduction to user interface and design. I used data grid view and text labels and implemented them creatively for visual satisfication.
+                </p>  
+            </div>       
+        </div>
+        <div class="box">
+            <h2 style="font-size: xx-large; text-shadow: 2 2px #000000;">Sodoku Solver</h2>
+            <div class="grid-container" style="grid-template-columns: auto auto auto;">
+                <p> Sodoku Solver was made using python's pygame library and can solve any sodoku board. However, user functionality is currently limited. I will be working on this in the future to make it
+                    more user friendly. 
+                    <br> <br>
+
+                    Furthermore, the sodoku solver taught me the importance of backtracking, an algorithm that becomes useful when solving difficult coding problems.
+
+                    </p>  
+            </div>    
+        </div>
+
+    <div class="box">
+        <h2 style="font-size: xx-large; text-shadow: 2 2px #000000;">To-do List</h2>
+        <div class="grid-container" style="grid-template-columns: auto auto auto;">
+            <p> During my school time in university I found it really difficult to keep track of all my classes. As a result, I made
+                a simple to-do list to keep track of my course work. This project help me get comfortable with javascript and taught
+                me the importance and implementation of local storage.
+            </p>  
+        </div>    
+    </div>
+</body>
+
+<script src="main.js"></script>
